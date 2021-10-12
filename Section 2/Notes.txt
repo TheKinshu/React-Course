@@ -1,0 +1,53 @@
+let & const
+
+var - still works in newer javascript but is recommended to use let and or const
+let - the new var
+const - constant variable
+
+default export:  the export modules name does not matter as it will only direct to one thing
+
+named export: no targeted export so you need to specifiy which name to export -
+              you can also use * to export all of them by doing "import * as bundled"
+
+ES6 javascript:
+defining variables attached to classes/objects
+constructor (){
+    this.myProperty = 'Value';
+}
+
+ES7:
+myProperty = 'Value';
+
+ES6 Methods:
+myMethod(){...}
+
+ES7
+myMethod = () => {...}
+
+
+Spread & Rest Operators:
+
+...
+
+Spread: Used to split up array elements OR object properties
+ex: const newArray = [...oldArray, 1, 2]
+    const newObject = {...oldObject, newProp:5}
+
+Rest: Used to merge a list of function arguemnts into an array
+You can recieve more than one argument but only need to type it once
+ex: function sortArgs(...args){
+    return args.sort()
+}
+
+Destructuring:
+Easily extract array elements or object properties and store them in variables
+
+array destructuring
+[a, b] = ['Hello', 'Max']
+console.log(a) //Hello
+console.log(b)
+
+object destructuring
+{name} = {name: 'Max', age: 28}
+console.log(name)//Max
+console.log(age)//undefined
