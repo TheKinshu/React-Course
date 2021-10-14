@@ -1,0 +1,18 @@
+Module Content
+
+React Core Syntax & JSX
+
+React make building complex, interactive and simpler
+
+React is all about component?
+
+Reusability, separation of concerns:
+Allow you to not repeat yourself and able to separate different thing in different place.
+
+How is a component built?
+HTML CSS Javascript
+
+you combine all 3 components together
+
+React allows you to create re-usable and reactive components consisting of HTML and Javascript
+
