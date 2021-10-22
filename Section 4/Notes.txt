@@ -1,0 +1,27 @@
+When using one state approach in update form. It is better to pass it through a function 
+it prevents the likely hood of losing information during scheduled updates. It will guarantee
+that the latest state value is accurate.
+
+
+Avoid this:
+setUserInput({
+            ...userInput,
+            enteredAmount: event.target.value
+        })
+
+Do this:
+setUserInput((prevState) => {
+            return {...prevState, enteredTitle: event.target.value }
+        })
+
+multi state approach:
+const [enteredTitle, setEnteredTitle] = useState('');
+const [enteredAmount, setEnteredAmount] = useState('');
+const [enteredDate, setEnteredDate] = useState('');
+
+one state approach:
+const [userInput, setUserInput] = useState({
+    enteredAmount: '',
+    enteredTitle: '',
+    enteredDate: ''
+});
